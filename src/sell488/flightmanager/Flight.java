@@ -3,7 +3,7 @@ package sell488.flightmanager;
 import javax.swing.*;
 
 public class Flight {
-
+        //test commit
     //Main flightNum1 var
     private int flyNum;
     //Main NumCheckBagsIn1 var
@@ -18,10 +18,10 @@ public class Flight {
     private final int FLIGHT_3 = 5867;
 
     //Finds number of bag space left after input
-    public Flight(int i, int j, int k) {
-        flyNum = i;
-        bagsChecked = j;
-        spaces = k;
+    public Flight(int flyNum, int bagsChecked, int spaces) {
+        this.flyNum = flyNum;
+        this.bagsChecked = bagsChecked;
+        this.spaces = spaces;
 
     }
 
