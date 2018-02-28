@@ -6,29 +6,11 @@ import java.util.Collections;
 
 public class Main {
 
-    //Main method
-    public static void main(String[] args) {
+  // Main method
+  public static void main(String[] args) {
 
-        int passengers;
-        int checkedBags;
-        int freeBags;
-        int space1 = 100;
-        int space2 = 300;
-        int space3 = 125;
-        int seats1 = 100;
-        final int FLIGHT_NUM_1 = 3210;
-        final int FLIGHT_NUM_2 = 2594;
-        final int FLIGHT_NUM_3 = 5867;
-        int NumCheckBagsIn1;
-        int NumCheckBagsIn2;
-        int NumCheckBagsIn3;
-        boolean done1 = false;
-        boolean flightDone1 = false;
-        int flightNumSet1 = -1;
-
-        new FlightManager();
-
-       
-    }
-
+    FlightManager flightManager = new FlightManager();
+    flightManager.addFlight(1234, 3, 5, 10);
+    new Menu(flightManager).menu();
+  }
 }
