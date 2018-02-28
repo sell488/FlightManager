@@ -26,12 +26,9 @@ public class Main {
         boolean flightDone1 = false;
         int flightNumSet1 = -1;
 
+        new FlightManager();
 
-
-        ArrayList <Flight> flightList = new ArrayList<>();
-
-        Flight.FlightManager();
-
+       
     }
 
 }
