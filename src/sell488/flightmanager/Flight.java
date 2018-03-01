@@ -60,6 +60,9 @@ public class Flight {
   }
 
   public void addPassenger(Passenger passenger) {
+      
+   
+      
       for(int i = 0; i < passenger.numberOfBags; i++) {
           checkBag();
       }
