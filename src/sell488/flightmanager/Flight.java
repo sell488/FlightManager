@@ -18,6 +18,10 @@ public class Flight {
 
     }
 
+    public int getFlightNum() {
+        return flightNum;
+    }
+
     public int getLeftOver() {
         return leftOver;
     }

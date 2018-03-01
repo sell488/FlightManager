@@ -13,5 +13,14 @@ public class FlightManager {
         flights.add(new Flight(flightNum, bags, seats, storage));
     }
 
+    public boolean flightExists(int flightNum) {
+        for(Flight flight : flights) {
+            if(flight.getFlightNum() == flightNum) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 }
