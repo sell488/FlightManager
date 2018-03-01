@@ -26,7 +26,13 @@ public class Flight {
         leftOver = storage - bags;
     }
 
+    public int getSeats() {
+        return seats;
+    }
 
+    public void setSeats(int seatsIn) {
+
+    }
 
 
 
