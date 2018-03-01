@@ -13,10 +13,13 @@ public class FlightManager {
     flights.add(new Flight(flyNum, bagsChecked, spaces, seats));
   }
 
+  //removes flight from list
   public void removeFlight(Flight flight) {
     flights.remove(flight);
   }
 
+  
+  //checks if flight exists.
   public boolean hasFlight(int flightNumber) {
 
     for (Flight flight : flights) {
@@ -35,7 +38,7 @@ public class FlightManager {
       }
     }
 
-    return -1;
+    return -1; // TODO: update this to return something meaningful if no index exists.
   }
 
   public List<Flight> getFlights() {
