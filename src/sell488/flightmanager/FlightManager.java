@@ -22,5 +22,20 @@ public class FlightManager {
         return false;
     }
 
+    int getFlightIndex(int flightNumber) {
+        for (Flight flight : flights) {
+            if (flight.getFlightNum() == flightNumber) {
+                return flights.indexOf(flight);
+            }
+        }
+        return -1;
+    }
+    public List<Flight> getFlights() {
+        return flights;
+    }
+
+    public void setFlights(List<Flight> flights) {
+        this.flights = flights;
+    }
 
 }
