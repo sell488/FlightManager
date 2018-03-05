@@ -1,10 +1,11 @@
 package sell488.flightmanager;
 
-import javax.swing.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Flight {
+
 
     List <Passenger> passengers = new ArrayList<Passenger>();
     private int flightNum;
@@ -30,7 +31,11 @@ public class Flight {
     public void setFlightNum(int flightNumber) {
         this.flightNum = flightNumber;
 
+
     }
+    passengers.add(passenger);
+  }
+
 
     public int getLeftOver() {
         return leftOver;
@@ -85,4 +90,5 @@ public class Flight {
     public void setPassengers(List<Passenger> passengers) {
         this.passengers = passengers;
     }
+
 }

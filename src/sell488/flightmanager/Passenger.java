@@ -12,3 +12,4 @@ public class Passenger {
         this.bagNum = bagNum;
     }
 }
+

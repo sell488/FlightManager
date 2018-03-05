@@ -1,3 +1,4 @@
+
 package sell488.flightmanager;
 
 import java.util.ArrayList;
@@ -40,3 +41,4 @@ public class FlightManager {
     }
 
 }
+
