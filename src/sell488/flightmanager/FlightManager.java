@@ -14,11 +14,12 @@ public class FlightManager {
     }
 
     public boolean flightExists(int flightNum) {
-        for(Flight flight : flights) {
-            if(flight.getFlightNum() == flightNum) {
+        for (Flight flight : flights) {
+            if (flight.getFlightNum() == flightNum) {
                 return true;
             }
         }
+
         return false;
     }
 
