@@ -1,9 +1,12 @@
 package sell488.flightmanager;
 
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Flight {
 
+    List <Passenger> passengers = new ArrayList<Passenger>();
     private int flightNum;
     private int bags;
     private int seats;
@@ -53,6 +56,10 @@ public class Flight {
         this.bags = bags;
     }
 
+    public void checkBag(){
+        this.bags++;
+    }
+
     public int getStorage() {
         return storage;
     }
@@ -60,6 +67,26 @@ public class Flight {
     public void setStorage(int storage) {
         this.storage = storage;
     }
+
+
+    public void addPassenger(Passenger passenger) {
+
+        for (int i = 0; i < passenger.bagNum; i++) {
+            checkBag();
+        }
+
+        passengers.add(passenger);
+    }
+
+    public List<Passenger> getPassengers() {
+        return passengers;
+    }
+
+    public void setPassengers(List<Passenger> passengers) {
+        this.passengers = passengers;
+    }
+
+
 
 
 
