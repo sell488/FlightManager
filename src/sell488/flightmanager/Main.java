@@ -6,11 +6,13 @@ import java.util.Collections;
 
 public class Main {
 
-  // Main method
-  public static void main(String[] args) {
+    //Main method
+    public static void main(String[] args) {
+        ArrayList <Flight> flightList = new ArrayList<>();
+        FlightManager flightManager = new FlightManager();
+        flightManager.addFlight(4321, 100,0,200);
 
-    FlightManager flightManager = new FlightManager();
-    flightManager.addFlight(1234, 3, 5, 10);
-    new Menu(flightManager).menu();
-  }
+    }
+
+
 }

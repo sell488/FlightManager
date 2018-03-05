@@ -2,13 +2,14 @@ package sell488.flightmanager;
 
 public class Passenger {
 
-  private String name;
-  int flightNumber, seat, numberOfBags;
+    private String name;
+    int flightNumber, seat, bagNum;
 
-  public Passenger(String name, int flightNumber, int numberOfBags) {
-    this.name = name;
-    this.flightNumber = flightNumber;
-    this.seat = seat;
-    this.numberOfBags = numberOfBags;
-  }
+    public Passenger(String name, int flightNumber, int seat, int bagNum) {
+        this.name = name;
+        this.flightNumber = flightNumber;
+        this.seat = seat;
+        this.bagNum = bagNum;
+    }
 }
+
