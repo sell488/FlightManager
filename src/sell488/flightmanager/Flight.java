@@ -10,6 +10,7 @@ public class Flight {
     private int storage;
     private int leftOver;
 
+    //Constructor
     public Flight(int flightNum, int bags, int seats, int storage) {
     this.flightNum = flightNum;
     this.bags = bags;
@@ -18,6 +19,7 @@ public class Flight {
 
     }
 
+    //
     public int getFlightNum() {
         return flightNum;
     }
