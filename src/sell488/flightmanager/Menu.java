@@ -34,6 +34,7 @@ public class Menu {
     int flightNumber;
     String passengerName;
     int numberOfBags;
+    int seatSelection;
     Boolean done = false;
     ;
 
@@ -42,12 +43,13 @@ public class Menu {
       flightNumber = askFlightNumber();
       passengerName = askPassengerName();
       numberOfBags = askNumberOfBags();
+      seatSelection = selectSeat();
 
       String doneChoice =
           JOptionPane.showInputDialog(null, "Are you done (type yes)?").trim().toLowerCase();
       if (doneChoice.equals("yes")) {
         try {
-          createPassenger(passengerName, flightNumber, numberOfBags);
+          createPassenger(passengerName, flightNumber, numberOfBags, seatSelection);
         } catch (ArrayIndexOutOfBoundsException e) {
           JOptionPane.showInputDialog(null, "Flight Doesn't Exist");
         } finally {
@@ -57,13 +59,13 @@ public class Menu {
     } while (!done);
   }
 
-  void createPassenger(String name, int flightNumber, int bags)
+  void createPassenger(String name, int flightNumber, int bags, int seat)
       throws ArrayIndexOutOfBoundsException {
 
     flightManager
         .getFlights()
         .get(flightManager.getFlightIndex(flightNumber))
-        .addPassenger(new Passenger(name, flightNumber, bags));
+        .addPassenger(new Passenger(name, flightNumber, seat, bags));
   }
 
   int askFlightNumber() {
@@ -81,6 +83,10 @@ public class Menu {
 
   String askPassengerName() {
     return JOptionPane.showInputDialog(null, "Enter passenger name");
+  }
+
+  int selectSeat() {
+    return 1; // TODO create seat selection code
   }
 
   int askNumberOfBags() {
