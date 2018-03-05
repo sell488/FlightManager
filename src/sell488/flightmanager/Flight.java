@@ -22,6 +22,11 @@ public class Flight {
         return flightNum;
     }
 
+    public void setFlightNum(int flightNumber) {
+        this.flightNum = flightNumber;
+
+    }
+
     public int getLeftOver() {
         return leftOver;
     }
@@ -34,9 +39,27 @@ public class Flight {
         return seats;
     }
 
-    public void setSeats(int seatsIn) {
-
+    public void setSeats(int seats) {
+        this.seats = seats;
     }
+
+    public int getBags() {
+        return bags;
+    }
+
+    public void setBags(int bags) {
+        this.bags = bags;
+    }
+
+    public int getStorage() {
+        return storage;
+    }
+
+    public void setStorage(int storage) {
+        this.storage = storage;
+    }
+
+
 
 
 
