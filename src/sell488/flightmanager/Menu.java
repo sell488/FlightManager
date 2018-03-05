@@ -3,6 +3,7 @@ package sell488.flightmanager;
 import javax.swing.JOptionPane;
 
 public class Menu {
+  private int seat = 0;
 
   FlightManager flightManager;
 
@@ -63,7 +64,7 @@ public class Menu {
     flightManager
         .getFlights()
         .get(flightManager.getFlightIndex(flightNumber))
-        .addPassenger(new Passenger(name, flightNumber, bags));
+        .addPassenger(new Passenger(name, flightNumber, seat, bags));
   }
 
   int askFlightNumber() {
@@ -74,7 +75,7 @@ public class Menu {
       flightNumber =
           Integer.parseInt(JOptionPane.showInputDialog(null, "Enter your flight number"));
 
-    } while (!flightManager.hasFlight(flightNumber));
+    } while (!flightManager.flightExists(flightNumber));
 
     return flightNumber;
   }

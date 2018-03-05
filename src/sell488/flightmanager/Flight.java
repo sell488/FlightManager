@@ -30,11 +30,7 @@ public class Flight {
 
     public void setFlightNum(int flightNumber) {
         this.flightNum = flightNumber;
-
-
     }
-    passengers.add(passenger);
-  }
 
 
     public int getLeftOver() {
