@@ -36,7 +36,6 @@ public class Menu {
     String passengerName;
     int numberOfBags;
     Boolean done = false;
-    ;
 
     do {
 

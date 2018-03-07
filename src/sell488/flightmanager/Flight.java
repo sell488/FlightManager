@@ -6,12 +6,17 @@ import java.util.List;
 
 public class Flight {
 
-
+    //list of passengers
     List <Passenger> passengers = new ArrayList<Passenger>();
+    //flight number
     private int flightNum;
+    //number of bags a passenger wants to check
     private int bags;
+    //number of seats in a flight
     private int seats;
+    //number of bags a flight can hold
     private int storage;
+    //amount of storage left after a passenger checks bags
     private int leftOver;
 
     //Constructor
@@ -23,24 +28,27 @@ public class Flight {
 
     }
 
-    //
+    //gets flight number
     public int getFlightNum() {
         return flightNum;
     }
 
+    //sets flight number
     public void setFlightNum(int flightNumber) {
         this.flightNum = flightNumber;
     }
 
-
+    //gets amount of space left after a passenger checks a bag
     public int getLeftOver() {
         return leftOver;
     }
 
+    //subtracts user inputted bags from space left for bags
     public void setLeftOver() {
         leftOver = storage - bags;
     }
 
+    //gets number of seats in a flight
     public int getSeats() {
         return seats;
     }
@@ -57,6 +65,7 @@ public class Flight {
         this.bags = bags;
     }
 
+    //adds one bag to number of bags checked
     public void checkBag(){
         this.bags++;
     }
@@ -70,6 +79,7 @@ public class Flight {
     }
 
 
+    //sets bags each passenger wants
     public void addPassenger(Passenger passenger) {
 
         for (int i = 0; i < passenger.bagNum; i++) {
@@ -82,6 +92,7 @@ public class Flight {
     public List<Passenger> getPassengers() {
         return passengers;
     }
+
 
     public void setPassengers(List<Passenger> passengers) {
         this.passengers = passengers;
