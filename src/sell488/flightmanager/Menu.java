@@ -5,6 +5,8 @@ import javax.swing.JOptionPane;
 public class Menu {
   private int seat = 0;
 
+  //TODO add comments!!!!
+
   FlightManager flightManager;
 
   public Menu(FlightManager flightManager) {
