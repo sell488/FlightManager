@@ -11,6 +11,7 @@ public class Main {
         ArrayList <Flight> flightList = new ArrayList<>();
         FlightManager flightManager = new FlightManager();
         flightManager.addFlight(4321, 100,0,200);
+        new Menu(flightManager).menu();
 
     }
 
