@@ -1,5 +1,6 @@
 package sell488.flightmanager;
 
+//creates passenger method
 public class Passenger {
 
     private String name;

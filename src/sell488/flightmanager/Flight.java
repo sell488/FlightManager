@@ -82,11 +82,27 @@ public class Flight {
     //sets bags each passenger wants
     public void addPassenger(Passenger passenger) {
 
-        for (int i = 0; i < passenger.bagNum; i++) {
+        if(hasSeats(30)){
             checkBag();
         }
 
+        else {
+            handleTooMany();
+        }
+
+//        for (int i = 0; i < passenger.bagNum; i++) {
+//            checkBag();
+//        }
+
         passengers.add(passenger);
+    }
+
+    public boolean hasSeats(int seat){
+        return  seat < getSeats();
+    }
+
+    public void handleTooMany() {
+        System.out.println("Not enough space");
     }
 
     public List<Passenger> getPassengers() {
