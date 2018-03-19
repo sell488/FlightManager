@@ -1,5 +1,7 @@
 package sell488.flightmanager;
 
+import sell488.flightmanager.Flights.FlightManager;
+
 import javax.swing.JOptionPane;
 
 public class Menu {

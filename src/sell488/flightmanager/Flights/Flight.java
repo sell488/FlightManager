@@ -1,10 +1,12 @@
-package sell488.flightmanager;
+package sell488.flightmanager.Flights;
 
+
+import sell488.flightmanager.Passenger;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Flight {
+public class Flight extends FlightManager {
 
     //list of passengers
     List <Passenger> passengers = new ArrayList<Passenger>();
