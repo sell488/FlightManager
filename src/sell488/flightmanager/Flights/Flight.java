@@ -21,13 +21,16 @@ public class Flight extends FlightManager {
     //amount of storage left after a passenger checks bags
     private int leftOver;
 
+    public Flight() {
+
+    }
+
     //Constructor
     public Flight(int flightNum, int bags, int seats, int storage) {
     this.flightNum = flightNum;
     this.bags = bags;
     this.seats = seats;
     this.storage = storage;
-
     }
 
     //gets flight number
